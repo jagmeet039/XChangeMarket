@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./navbar.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -30,7 +30,7 @@ const NavBar = () => {
       className={isFixed ? "navbar fixed" : "navbar"}
     >
       <Container className="navbar-container">
-        <Navbar.Brand onClick={()=>{router(`/xchangemarket`)}}>
+        <Navbar.Brand onClick={()=>{router(`/`)}}>
           <ion-icon name="bag"></ion-icon>
           <h1 className="logo">XChangeMarket</h1>
         </Navbar.Brand>
@@ -82,7 +82,7 @@ const NavBar = () => {
               <Link
                 aria-label="Go to Home Page"
                 className="navbar-link"
-                to="/xchangemarket"
+                to="/"
                 onClick={() => setExpand(false)}
               >
                 <span className="nav-link-label">Home</span>

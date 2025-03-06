@@ -27,7 +27,7 @@ function App() {
         />
         <NavBar />
         <Routes>
-          <Route path="/xchangemarket" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/xchangemarket/shop" element={<Shop />} />
           <Route path="/xchangemarket/shop/:id" element={<Product />} />
           <Route path="/xchangemarket/cart" element={<Cart />} />
